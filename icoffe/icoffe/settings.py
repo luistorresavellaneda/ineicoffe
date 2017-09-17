@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'productos',
+    'ambientes',
+    'ventas',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'APP_DIRS': True,
+        'APP_DIRS': True,  #en true permite tener templates dentro del app
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
