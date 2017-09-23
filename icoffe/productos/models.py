@@ -1,5 +1,7 @@
 from django.db import models
 
+#from ambientes.models import Mesa
+#from productos.models import Insumo,Categoria
 # Create your models here.
 
 

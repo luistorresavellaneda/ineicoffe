@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from ventas.views import carta_productos
+from ventas.views import carta_productos, CartaProductos
 
 urlpatterns = [
     url(r'^$', carta_productos),  #definicion de index (pagina de inicio)
