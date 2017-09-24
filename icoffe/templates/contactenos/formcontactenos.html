@@ -1,0 +1,23 @@
+{% extends 'layouts/website.html' %}
+{% block container %}
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Ingrese sus sugerencias</h2>
+            <form action="{% url 'contactenos:buzon' %}" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Grabar">
+            </form>
+        </div>
+    </div>
+    <p>Volver a carta: <a href="{% url 'inicio' %}">Aqui</a></p>
+{% endblock %}
+<html>
+<head>
+    <title>
+        Formulario
+    </title>
+</head>
+<body>
+</body>
+</html>

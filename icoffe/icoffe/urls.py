@@ -19,7 +19,8 @@ from django.contrib import admin
 from ventas.views import carta_productos, CartaProductos
 
 urlpatterns = [
-    url(r'^$', carta_productos),  #definicion de index (pagina de inicio)
+    url(r'^$', carta_productos, name='inicio'),  #definicion de index (pagina de inicio)
     url(r'^ventas/', include('ventas.url')),
     url(r'^admin/', admin.site.urls),
+    url(r'^contactenos/', include('contactenos.url', namespace='contactenos')),
 ]

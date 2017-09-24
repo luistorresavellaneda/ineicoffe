@@ -1,13 +1,19 @@
+{% extends 'layouts/website.html' %}
+{% block titulo %}Carta{% endblock %}
+{% block container %}
+    <h1>{{ titulo }}</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>{{ producto.nombre }}</li>
+        {% endfor %}
+    </ul>
+    <p>Cuentanos tu experiencia: <a href="{% url 'contactenos:buzon' %}">Aqui</a></p>
+{% endblock %}
 <html>
 <head>
     <title>Carta de productos</title>
 </head>
 <body>
-    <h1>{{ titulo }}</h1>
-    <ul>
-    {% for producto in productos %}
-        <li>{{ producto.nombre }}</li>
-    {% endfor %}
-    </ul>
+
 </body>
 </html>
