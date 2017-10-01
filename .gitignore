@@ -2,3 +2,6 @@
 *.pyc
 *.pyi
 icoffe/db.sqlite3
+icoffe/static/assets/
+icoffe/media/
+icoffe/icoffe/setings/local.py
